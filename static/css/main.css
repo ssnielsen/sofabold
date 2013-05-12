@@ -1,0 +1,126 @@
+body{
+
+}
+
+header .navbar .brand{
+	height: 42px;
+	line-height: 42px;
+	padding: 0 20px;
+}
+
+header .brand img{
+	width: 28px;
+	height: 28px;
+	position: relative;
+	top: -3px;
+}
+
+.right{
+	float: right;
+}
+
+.navbar .nav > li#navuser > a{
+	padding: 0;
+}
+
+#navuser{
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+}
+
+#navuser .avatar{
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.document figure{
+	margin-top: 20px;
+	text-align: center;
+	position: relative;
+}
+
+.document figure figcaption{
+	position: absolute;
+	top: 165px;
+	left: 175px;
+	width: 150px;
+	height: 110px;
+	font-size: 10px;
+	overflow: hidden;
+}
+
+.document figure img{
+	margin-top: 95px;
+}
+
+.coll_stage_wrapper{
+	background: rgba(0,0,0,0.1);
+	padding: 10px;
+}
+
+.coll_stage{
+    width:582px;
+    height:500px;
+    position:relative;
+    overflow:hidden;
+    font-weight:bold;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.coll_stage li{
+	list-style-type: none;
+	width: 64px;
+	height: 64px;
+	border-radius: 99px;
+	overflow: hidden;
+}
+
+.mygroups .filter{
+	margin-top: 30px;
+}
+
+#user input{
+	width: 300px;
+}
+
+
+
+.collaborators a:hover{
+	text-decoration: none;
+}
+
+.mydocuments .documents{
+	margin-top: 30px;
+}
+
+.mydocuments .documents .accordion-group{
+	margin-bottom: 5px;
+}
+
+.mydocuments .documents .accordion-group .accordion-heading a{
+	font-size: 16px;
+}
+
+td.buttons a{
+	margin-left: 5px;
+}
+
+
+/* Match and prematch time start */
+.match-time {
+	float: right;
+}
+
+.prematch-time {
+	float: left;
+}
+
+.time-style{
+	font-size: 80%;
+	font-weight: bold;
+}
+/* Match and prematch time end */
