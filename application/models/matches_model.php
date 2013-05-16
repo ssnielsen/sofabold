@@ -7,10 +7,16 @@ class Matches_Model extends CI_Model {
 	}
 
 	public function getMatchesForDate($date) {
+		$channels = array(
+			array('id' => '0', 'name' => '6eren'),
+			array('id' => '1', 'name' => '3+')
+		);
+
+
 		$matches = array(
-			array('tournamentId'=>'0', 'homeId'=>'0', 'homeName'=>'FC København', 'awayId'=>'1', 'awayName'=>'Brøndby IF', 'time'=>'14:30'),
-			array('tournamentId'=>'0', 'homeId'=>'2', 'homeName'=>'FC Nordsjælland', 'awayId'=>'3', 'awayName'=>'Randers FC', 'time'=>'17:00'),
-			array('tournamentId'=>'0', 'homeId'=>'4', 'homeName'=>'Esbjerg', 'awayId'=>'5', 'awayName'=>'Odense Boldklub', 'time'=>'19:00')
+			array('tournamentId'=>'0', 'tournamentName'=>'Superliga', 'homeId'=>'0', 'homeName'=>'FC København', 'awayId'=>'1', 'awayName'=>'Brøndby IF', 'time'=>'14:30', 'channels'=>$channels),
+			array('tournamentId'=>'0', 'tournamentName'=>'Superliga', 'homeId'=>'2', 'homeName'=>'FC Nordsjælland', 'awayId'=>'3', 'awayName'=>'Randers FC', 'time'=>'17:00', 'channels'=>$channels),
+			array('tournamentId'=>'0', 'tournamentName'=>'Superliga', 'homeId'=>'4', 'homeName'=>'Esbjerg', 'awayId'=>'5', 'awayName'=>'Odense Boldklub', 'time'=>'19:00', 'channels'=>$channels)
 		);
 
 		$matchday = array(

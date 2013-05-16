@@ -22,6 +22,7 @@
 					<a class="brand" href="<?= base_url() ?>"><img src="<?= base_url() ?>static/img/header_logo.png">  Sofabold</a>
 					<ul class="nav">
 						<li><a href="<?= base_url() ?>index.php/matches">Kampe</a></li>
+						<li><a href="<?= base_url() ?>index.php/adminpanel">Admin</a></li>
 					</ul>
 				</div>
 			</div>
