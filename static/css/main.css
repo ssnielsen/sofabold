@@ -109,6 +109,11 @@ td.buttons a{
 	margin-left: 5px;
 }
 
+.top-date {
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+}
 
 /* Match and prematch time start */
 .match-time {
@@ -124,3 +129,24 @@ td.buttons a{
 	font-weight: bold;
 }
 /* Match and prematch time end */
+
+/* Logo resize start */
+img.logo{
+    width: 25px;
+    height: auto;
+}
+/* Logo resize end */
+
+.match-info {
+	padding-top: 3px;
+}
+
+.team-info {
+	text-align: center;
+}
+
+.highlight-team {
+	font-weight: bold;
+	color: #D22;
+}
+

@@ -11,7 +11,7 @@ class Matches extends CI_Controller {
 
 	public function index(){
 		$this->load->view('templates/header');
-		$data['matches'] = $this->matches_model->get_matches();
+		$data['matchdays'] = $this->matches_model->getMatchesForDates(1,2);
 		$this->load->view('matches_view', $data);
 		$this->load->view('templates/footer');
 	}
