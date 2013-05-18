@@ -6,13 +6,12 @@ class Matches extends CI_Controller {
 		parent::__construct();
 		$this->load->model('matches_model');
 		global $data;
-		
 	}
 
 	public function index(){
 		$this->load->view('templates/header');
 		$data['matchdays'] = $this->matches_model->getMatchesForDates(1,2);
-		$this->load->view('matches_view', $data);
+		$this->load->view('matches', $data);
 		$this->load->view('templates/footer');
 	}
 

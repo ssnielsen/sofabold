@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'sofabold';
-$db['default']['password'] = 'sofabold';
+$db['default']['password'] = 'GaPVe2spaVsGzvUc';
 $db['default']['database'] = 'sofabold';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
