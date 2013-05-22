@@ -1,4 +1,9 @@
 <?php
+	$msg = $this->session->flashdata('msg');
+	if($msg){
+		$msg = unserialize($msg);
+	}
+
 	$this->load->helper('url');
 ?>
 
@@ -8,6 +13,7 @@
 	<title>Sofabold</title>
 	<script type="text/javascript" src="<?= base_url() ?>static/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?= base_url() ?>static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>static/js/bootstrap-alert.js"></script>
 	<script type="text/javascript" src="<?= base_url() ?>static/js/tipsy.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/css/960.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/css/bootstrap.min.css">
@@ -28,5 +34,11 @@
 			</div>
 		</nav>
 	</header>
+	<?php if($msg): ?>  
+		<a class="close" data-dismiss="alert">×</a>  
+		<div class="alert alert-<?= $msg['type'] ?>">
+			<?= $msg['msg'] ?>
+		</div>
+	<?php endif ?>
 	<section id="main">
 		<div class="container_24">	
