@@ -13,8 +13,8 @@
 	<title>Sofabold</title>
 	<script type="text/javascript" src="<?= base_url() ?>static/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?= base_url() ?>static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?= base_url() ?>static/js/bootstrap-alert.js"></script>
 	<script type="text/javascript" src="<?= base_url() ?>static/js/tipsy.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>static/js/bootstrap-alert.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/css/960.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/css/tipsy.css">
