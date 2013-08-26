@@ -25,6 +25,7 @@ class Matches_Model extends CI_Model {
 		);
 
 		$matchdays = array(
+			$matchday, $matchday, $matchday,
 			$matchday, $matchday, $matchday 
 		);
 

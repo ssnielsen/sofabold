@@ -22,7 +22,7 @@
 </head>
 <body>
 	<header id="main">
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-fixed-top navbar-inverse">
 			<div class="navbar-inner" style="-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;">
 				<div class="container_24">
 					<a class="brand" href="<?= base_url() ?>"><img src="<?= base_url() ?>static/img/header_logo.png">  Sofabold</a>
