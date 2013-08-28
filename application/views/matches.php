@@ -4,10 +4,12 @@
 
 	<?php foreach ($matchdays as $matchday): ?>
 		<div class="matches_table">
+				<div class="top-date"><?php print($matchday['date']) ?></div>		
 			<table class="table table-striped table-bordered standard">
-				<thead>
+				<!-- <thead>
 					<tr><td><div class="top-date"><?php print($matchday['date']) ?></div></td></tr>
 				</thead>
+ -->		
 				<?php foreach($matchday['matches'] as $match): ?>
 					<tr>
 						<td>

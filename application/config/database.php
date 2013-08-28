@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'sofabold';
-$db['default']['password'] = 'GaPVe2spaVsGzvUc';
-$db['default']['database'] = 'sofabold';
+$db['default']['hostname'] = 'mydb22.surf-town.net';
+$db['default']['username'] = 'ssniels_sofa';
+$db['default']['password'] = 'nbxV6Swy';
+$db['default']['database'] = 'ssniels_sofabold';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
