@@ -56,13 +56,13 @@ class Admin extends CI_Controller {
 	public function createTournament() {
 		$name = $this->input->post('name_tournament');
 
-		// Create team in db.
+		// Create tournament in db.
 		$dbData['name'] = $name;
 		$query = $this->db->insert_string('tournament', $dbData);
 		$this->db->query($query);
 
 		if ($this->db->affected_rows() == 1) {
-		 	// Get the team's id
+		 	// Get the tournament's id
 		 	$this->db->select('id')->where('name', $name)->from('tournament');
 		 	$result = $this->db->get()->result();
 		 	$id = $result[0]->id;	
@@ -78,6 +78,35 @@ class Admin extends CI_Controller {
 			}
 		} else {
 				$this->utils->msg('error', "Turnering blev ikke oprettet.");
+		}
+		redirect('admin');
+	}
+
+	public function createChannel() {
+		$name = $this->input->post('name_channel');
+
+		// Create channel in db.
+		$dbData['name'] = $name;
+		$query = $this->db->insert_string('channel', $dbData);
+		$this->db->query($query);
+
+		if ($this->db->affected_rows() == 1) {
+		 	// Get the channel's id
+		 	$this->db->select('id')->where('name', $name)->from('channel');
+		 	$result = $this->db->get()->result();
+		 	$id = $result[0]->id;	
+
+			// Handle upload to static/img/channels/[id].png
+			$type = 'channels';
+			$file = 'userfile_channel';
+			if ($this->uploadLogo($id, $type, $file)) {
+				$this->utils->msg('success', "Kanal oprettet.");
+			} else {
+				$this->utils->msg('error', "Kanal blev ikke oprettet. Upload fejl: " . $error['error']);
+				$this->db->where('id', $id)->delete('channel');
+			}
+		} else {
+				$this->utils->msg('error', "Kanal blev ikke oprettet.");
 		}
 		redirect('admin');
 	}
